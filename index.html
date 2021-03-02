@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check the login</title>
+</head>
+<body>
+
+    <script>
+        var userName= prompt('Please enter username');
+        if (userName == "Admin") {
+            //new ccode options
+            var password = prompt("Please enter password");
+            if (password == "TheMaster" ) {
+                alert("Welcome");
+            }  
+            else if(password == "" || password == null){
+                alert("Canceled");
+            }
+            else {
+                alert("Wrong password");
+            };
+
+        } else if( userName == "" || userName == null) {
+            alert("Canceled");
+        } else {
+            alert("I don't know you");            
+        }
+
+
+    </script>
+    
+</body>
+</html>
